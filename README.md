@@ -17,7 +17,7 @@
 
 ### Como rodar a aplicação
 
-Necessário ter instalado a versão 12.18 ou superior
+Necessário ter instalado a versão 12.18 ou superior do node.js
 
 No terminal do seu computador clone o projeto:
 
