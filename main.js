@@ -25,6 +25,11 @@ let relatorioCorrida = function (obj) {
             api["api/v1/salvarRecorde"](resposta)
               .then((resultado) => {
                 console.log("Recorde salvo");
+                api["api/v1/exibirRecordes"]()
+                  .then((resultado) => {
+                    console.log(resultado);
+                  })
+                  .catch((erro) => console.log(erro));
               })
               .catch((erro) => console.log(erro));
             console.log(`O recorde é de ${resposta.piloto}`);
